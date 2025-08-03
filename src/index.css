@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Customer Support Dashboard Design System - NO YELLOW */
+
+@layer base {
+  :root {
+    /* Core Palette - No Yellow */
+    --background: 215 25% 97%; /* Very light gray #F7F9FC */
+    --foreground: 211 25% 14%; /* Dark charcoal #1F2D3A */
+
+    --card: 0 0% 100%; /* White surface */
+    --card-foreground: 211 25% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 211 25% 14%;
+
+    /* Primary: Indigo #4F46E5 */
+    --primary: 243 75% 59%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 243 75% 54%;
+    --primary-light: 243 75% 95%;
+
+    /* Accent: Aqua #22D3EE */
+    --accent: 187 85% 53%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 187 85% 48%;
+    --accent-light: 187 85% 95%;
+
+    /* Secondary: Light backgrounds */
+    --secondary: 215 25% 95%;
+    --secondary-foreground: 211 25% 14%;
+
+    --muted: 215 25% 93%;
+    --muted-foreground: 215 13% 42%; /* #6B7280 */
+
+    /* Status Colors - No Yellow */
+    --success: 142 76% 36%; /* Green #10B981 */
+    --success-foreground: 0 0% 100%;
+    --error: 0 84% 60%; /* Red #EF4444 */
+    --error-foreground: 0 0% 100%;
+    --info: 217 91% 60%; /* Blue #3B82F6 */
+    --info-foreground: 0 0% 100%;
+
+    /* UI Elements */
+    --border: 215 25% 88%;
+    --input: 215 25% 88%;
+    --ring: 243 75% 59%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar-background: 215 25% 98%;
+    --sidebar-foreground: 211 25% 14%;
+    --sidebar-primary: 243 75% 59%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 93%;
+    --sidebar-accent-foreground: 211 25% 14%;
+    --sidebar-border: 215 25% 88%;
+    --sidebar-ring: 243 75% 59%;
+
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(243 75% 59%), hsl(187 85% 53%));
+    --gradient-surface: linear-gradient(180deg, hsl(0 0% 100%), hsl(215 25% 99%));
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 25px -5px hsl(243 75% 59% / 0.15);
+    --shadow-soft: 0 4px 12px -2px hsl(215 25% 14% / 0.08);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .dark {
+    --background: 215 25% 7%;
+    --foreground: 215 25% 95%;
+
+    --card: 215 25% 9%;
+    --card-foreground: 215 25% 95%;
+
+    --popover: 215 25% 9%;
+    --popover-foreground: 215 25% 95%;
+
+    --primary: 243 75% 64%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 243 75% 69%;
+    --primary-light: 243 75% 15%;
+
+    --accent: 187 85% 58%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 187 85% 63%;
+    --accent-light: 187 85% 15%;
+
+    --secondary: 215 25% 12%;
+    --secondary-foreground: 215 25% 95%;
+
+    --muted: 215 25% 14%;
+    --muted-foreground: 215 13% 65%;
+
+    --success: 142 76% 41%;
+    --error: 0 84% 65%;
+    --info: 217 91% 65%;
+
+    --border: 215 25% 18%;
+    --input: 215 25% 18%;
+    --ring: 243 75% 64%;
+
+    --sidebar-background: 215 25% 8%;
+    --sidebar-foreground: 215 25% 95%;
+    --sidebar-primary: 243 75% 64%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 14%;
+    --sidebar-accent-foreground: 215 25% 95%;
+    --sidebar-border: 215 25% 18%;
+    --sidebar-ring: 243 75% 64%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
